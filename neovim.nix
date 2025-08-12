@@ -40,6 +40,11 @@
 				rust.enable = true;
                                 go.enable = true;
 			};
+
+                        visuals = {
+                                nvim-web-devicons.enable = true;
+                                indent-blankline.enable = true;
+                        };
 		};
 	};
 }
