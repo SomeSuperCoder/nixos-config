@@ -13,5 +13,6 @@
 	imports = [
 		./git.nix
 		./neovim.nix
+                ./hyprland.nix
 	];
 }

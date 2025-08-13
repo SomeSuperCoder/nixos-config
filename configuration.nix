@@ -17,9 +17,7 @@
                 ghostty
 
                 # Regular system packages
-                wget
-                fastfetch
-                pfetch
+                wget 
                 tree
                 btop
                 git
@@ -37,6 +35,11 @@
 
                 # DPI bypass software
                 zapret
+
+                # Fetches
+                fastfetch
+                pfetch
+                microfetch
         ];
 
     
@@ -52,11 +55,36 @@
         # Enable the X11 windowing system.
         services.xserver.enable = true;
         services.xserver.displayManager.gdm.enable = true;
-        services.xserver.desktopManager.gnome.enable = true;
+        # services.xserver.desktopManager.gnome.enable = true;
 
+        # Hyrpland!!!
+        programs.hyprland = {
+                enable = true;
+                xwayland.enable = true;
+        };
+
+        xdg.portal = {
+                enable = true;
+                extraPortals = with pkgs; [
+                        xdg-desktop-portal-gtk
+                ];
+        };
+
+        services.pipewire = {
+                enable = true;
+                alsa.enable = true;
+                alsa.support32Bit = true;
+                pulse.enable = true;
+        };
+       
         environment.variables = {
-                GSK_RENDERER = "ngl";
-        }; 
+                GSK_RENDERER = "ngl"; # Fix gnome wayland
+
+                # For hyprland
+                NIXOS_OZONE_WL = "1";
+        };
+
+        # ======================================================================
 
         # Define a user account. Don't forget to set a password with ‘passwd’.
         users.users.allen = {
