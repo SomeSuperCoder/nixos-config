@@ -12,7 +12,7 @@
 		
 		shellAliases =
 		let
-			flakePath = "~/nix";
+			flakePath = "~/nixos-config";
 		in {
 			rebuild-system = "sudo nixos-rebuild switch --flake ${flakePath}";
                         collect-garbage = "sudo nix-collect-garbage -d && rebuild-system";
