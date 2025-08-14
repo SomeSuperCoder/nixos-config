@@ -16,7 +16,7 @@
                                 gaps_out = 20;
                                 border_size = 2;
 
-                                "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 4d deg";
+                                "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 4deg";
                                 "col.inactive_border" = "rgba(595959aa)";
 
                                 resize_on_border = false;
@@ -71,6 +71,8 @@
                                 "XCURSOR_SIZE,24"
                                 "HYPRCURSOR_SIZE,24"
                                 "QT_QPA_PLATFORMTHEME,gtk2"
+                                "GSK_RENDERER,ngl"
+                                "NIXOS_OZONE_WL,1" 
                         ];
 
                         exec-once = [
