@@ -15,6 +15,8 @@
                 firefox
                 telegram-desktop
                 ghostty
+                gnome-tweaks
+                nwg-look
 
                 # Regular system packages
                 wget 
@@ -23,11 +25,14 @@
                 git
                 fzf
     
-                # Terminal
+                # Themes
                 zsh
                 oh-my-zsh
                 zsh-syntax-highlighting
                 nerd-fonts.jetbrains-mono
+                ## Catppuccin
+                catppuccin-gtk
+                catppuccin-grub
 
                 # Programming languages
                 go
@@ -65,8 +70,7 @@
         xdg.portal = {
                 enable = true;
                 extraPortals = with pkgs; [
-                        #xdg-desktop-portal-hyprland
-                        #xdg-desktop-portal-gnome
+                        xdg-desktop-portal-gnome
                 ];
         };
 
