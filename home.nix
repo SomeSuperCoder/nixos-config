@@ -9,6 +9,7 @@
 		./home/git.nix
 		./home/neovim.nix
                 ./home/kitty.nix
+                ./home/zsh.nix
 
                 ./home/hypr/hyprland.nix
 	];

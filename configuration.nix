@@ -4,7 +4,7 @@
         imports = [ # Include the results of the hardware scan.
                 ./hardware-configuration.nix
                 ./modules/boot.nix
-                ./modules/zsh.nix
+                
         ];
 
         environment.systemPackages = with pkgs; [
@@ -36,8 +36,6 @@
                 hyprshot
 
                 # Themes
-                zsh
-                oh-my-zsh
                 zsh-syntax-highlighting
                 nerd-fonts.jetbrains-mono
                 ## Catppuccin
@@ -101,6 +99,7 @@
         # ======================================================================
 
         # Define a user account. Don't forget to set a password with ‘passwd’.
+        programs.zsh.enable = true;
         users.users.allen = {
                 isNormalUser = true;
                 extraGroups = [ "wheel" "input" "networkmanager" ]; # Enable ‘sudo’ for the user.
