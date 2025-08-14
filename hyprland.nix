@@ -195,15 +195,4 @@
                         ];
                 };
         };
-
-        home.packages = with pkgs; [
-                rofi
-                waybar
-                swww
-                swaynotificationcenter
-                kitty
-                wl-clipboard
-                hyprlock
-                hyprshot
-        ];
 }

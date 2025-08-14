@@ -24,7 +24,17 @@
                 btop
                 git
                 fzf
-    
+
+		# Hyprland
+   		rofi
+                waybar
+                swww
+                swaynotificationcenter
+                kitty
+                wl-clipboard
+                hyprlock
+                hyprshot
+
                 # Themes
                 zsh
                 oh-my-zsh
