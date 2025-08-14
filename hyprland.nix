@@ -1,6 +1,13 @@
 { config, pkgs, ... }:
 
 {
+        #dconf.settings = {
+        #        "org/gnome/desktop/interface" = {
+        #                color-scheme = "prefer-dark";
+        #                gtk-theme = "Adwaita-dark";
+        #        };
+        #};
+
         wayland.windowManager.hyprland = {
                 enable = true;
 
@@ -10,7 +17,7 @@
                         "$menu" = "rofi -show drun";
 
                         monitor = ",preferred,auto,auto";
-                        
+
                         general = {
                                 gaps_in = 5;
                                 gaps_out = 20;

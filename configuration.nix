@@ -21,18 +21,17 @@
                 tree
                 btop
                 git
-                zsh
                 fzf
-                wl-clipboard
-                python314
     
-                # Extras
+                # Terminal
+                zsh
                 oh-my-zsh
                 zsh-syntax-highlighting
                 nerd-fonts.jetbrains-mono
 
                 # Programming languages
                 go
+                python314
 
                 # DPI bypass software
                 zapret
@@ -42,8 +41,7 @@
                 pfetch
                 microfetch
         ];
-
-    
+ 
         # Enables flakes
         nix.settings.experimental-features = ["nix-command" "flakes" ];
 
