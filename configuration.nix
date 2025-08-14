@@ -3,8 +3,8 @@
 {
         imports = [ # Include the results of the hardware scan.
                 ./hardware-configuration.nix
-                ./boot.nix
-                ./zsh.nix
+                ./modules/boot.nix
+                ./modules/zsh.nix
         ];
 
         environment.systemPackages = with pkgs; [

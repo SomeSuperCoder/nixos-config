@@ -3,16 +3,13 @@
 		username = "allen";
 		homeDirectory = "/home/allen";
 		stateVersion = "25.05";
-
-                packages = with pkgs.gnomeExtensions; [
-                        blur-my-shell
-                        logo-menu
-                ];
 	};
 
 	imports = [
-		./git.nix
-		./neovim.nix
-                ./hyprland.nix
+		./home/git.nix
+		./home/neovim.nix
+                ./home/kitty.nix
+
+                ./home/hypr/hyprland.nix
 	];
 }
