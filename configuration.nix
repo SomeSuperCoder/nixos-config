@@ -36,6 +36,7 @@
                 hyprlock
                 hyprshot
                 pavucontrol
+                networkmanagerapplet
 
                 # Themes
                 zsh-syntax-highlighting
