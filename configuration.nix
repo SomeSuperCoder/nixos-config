@@ -40,6 +40,7 @@
                 # Themes
                 zsh-syntax-highlighting
                 nerd-fonts.jetbrains-mono
+                papirus-icon-theme
                 ## Catppuccin
                 catppuccin-gtk
                 catppuccin-grub

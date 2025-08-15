@@ -1,7 +1,7 @@
 {
         catppuccin.rofi = {
                 enable = true;
-                flavor = "latte";
+                flavor = "frappe";
         };
 
         programs.rofi = {
@@ -13,6 +13,7 @@
                         drun-display-format = "{icon} {name}";
                         display-drun = "  Apps";
                         font = "JetBrainsMono Nerd Font Medium 10";
+                        icon-theme = "Papirus";
                 };
         };
 }
