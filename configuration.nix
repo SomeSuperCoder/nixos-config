@@ -55,6 +55,7 @@
                 zapret
 
                 # Fetches
+                neofetch
                 fastfetch
                 pfetch
                 microfetch

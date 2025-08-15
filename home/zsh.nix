@@ -9,7 +9,7 @@
 		oh-my-zsh = {
 			enable = true;
 
-			theme = "dpoggi";
+			theme = "robbyrussell";
 		};
 		
 		shellAliases =
