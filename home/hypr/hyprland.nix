@@ -138,19 +138,19 @@
                                 "$mainMod, E, exec, $fileManager"
                                 "$mainMod, V, togglefloating,"
                                 "$mainMod, R, exec, $menu"
-                                "$mainMod, P, pseudo, # dwindle"
-                                "$mainMod, J, togglesplit, # dwindle"
-                                "$mainMod, W, exec, ~/.local/bin/wallpaper-select.sh"
-                                "$mainMod, K, exec, rofi -show calc -modi calc -no-show-match -no-sort"
-                                "$mainMod, O, exec, ~/.local/bin/rofi-wifi-menu.sh"
-                                "$mainMod, I, exec, rofi -show emoji -modi emoji"
-                                "$mainMod, Escape, exec, ~/.local/bin/power-menu.sh"
+                                "$mainMod, P, pseudo,"
+                                "$mainMod, J, togglesplit,"
                                 "$mainMod, B, exec, $browser"
-                                ", Print, exec, ~/.local/bin/screenshot-menu.sh"
+                                "$mainMod, L, exec, hyprlock"
+                                
+                                # Hyprshot)))
+                                ", Print, exec, echo 'aHlwcnNob3QgLW0gJChwcmludGYgIm91dHB1dFxud2luZG93XG5yZWdpb24iIHwgd29maSAtLXNob3cgZG1lbnUpCg==' | base64 -d | bash"
+
                                 "$mainMod, left, movefocus, l"
                                 "$mainMod, right, movefocus, r"
                                 "$mainMod, up, movefocus, u"
                                 "$mainMod, down, movefocus, d"
+
                                 "$mainMod, 1, workspace, 1"
                                 "$mainMod, 2, workspace, 2"
                                 "$mainMod, 3, workspace, 3"
@@ -161,6 +161,7 @@
                                 "$mainMod, 8, workspace, 8"
                                 "$mainMod, 9, workspace, 9"
                                 "$mainMod, 0, workspace, 10"
+
                                 "$mainMod SHIFT, 1, movetoworkspace, 1"
                                 "$mainMod SHIFT, 2, movetoworkspace, 2"
                                 "$mainMod SHIFT, 3, movetoworkspace, 3"
@@ -171,10 +172,13 @@
                                 "$mainMod SHIFT, 8, movetoworkspace, 8"
                                 "$mainMod SHIFT, 9, movetoworkspace, 9"
                                 "$mainMod SHIFT, 0, movetoworkspace, 10"
+
                                 "$mainMod, S, togglespecialworkspace, magic"
                                 "$mainMod SHIFT, S, movetoworkspace, special:magic"
+
                                 "$mainMod, mouse_down, workspace, e+1"
                                 "$mainMod, mouse_up, workspace, e-1"
+
                                 "$mainMod ALT, left, workspace, -1"
                                 "$mainMod ALT, right, workspace, +1"
                         ];
