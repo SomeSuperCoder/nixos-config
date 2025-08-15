@@ -31,12 +31,14 @@
                 waybar
                 swww
                 swaynotificationcenter
+                libnotify
                 kitty
                 wl-clipboard
                 hyprlock
                 hyprshot
                 pavucontrol
                 networkmanagerapplet
+                playerctl
 
                 # Themes
                 zsh-syntax-highlighting
