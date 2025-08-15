@@ -7,7 +7,7 @@
                 settings = {
                         "$terminal" = "kitty";
                         "$fileManager" = "nautilus -w";
-                        "$menu" = "rofi -show drun";
+                        "$menu" = "wofi --show drun";
 
                         monitor = ",preferred,auto,auto";
 

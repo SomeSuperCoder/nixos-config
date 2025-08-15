@@ -13,6 +13,5 @@
 
                 ./home/hypr/hyprland.nix
                 ./home/hypr/waybar.nix
-                ./home/hypr/rofi.nix
 	];
 }
