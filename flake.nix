@@ -10,9 +10,10 @@
 		};
 
                 nvf.url = "github:notashelf/nvf";
+                catppuccin.url = "github:catppuccin/nix";
 	};
 
-	outputs = { nixpkgs, home-manager, nvf, ... }:
+	outputs = { nixpkgs, home-manager, nvf, catppuccin, ... }:
 		let
 			system = "x86_64-linux";
 		in {
@@ -23,7 +24,7 @@
 
 		homeConfigurations.allen = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
-			modules = [ ./home.nix nvf.homeManagerModules.default ];
+			modules = [ ./home.nix nvf.homeManagerModules.default catppuccin.homeModules.catppuccin ];
 		};
 	};
 }

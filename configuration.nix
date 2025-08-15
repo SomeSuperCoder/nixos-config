@@ -27,7 +27,7 @@
                 psmisc
 
 		# Hyprland
-   		rofi
+   		rofi bemoji
                 waybar
                 swww
                 swaynotificationcenter
