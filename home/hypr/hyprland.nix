@@ -8,6 +8,7 @@
                         "$terminal" = "kitty";
                         "$fileManager" = "nautilus -w";
                         "$menu" = "wofi --show drun";
+                        "$browser" = "firefox";
 
                         monitor = ",preferred,auto,auto";
 
@@ -76,6 +77,7 @@
                         ];
 
                         exec-once = [
+                                "hyprctl setcursor Bibata-Modern-Classic 24"
                                 "swww-daemon"
                                 "waybar & nm-applet"
                                 "wl-paste --type text --watch cliphist store"
@@ -143,7 +145,7 @@
                                 "$mainMod, O, exec, ~/.local/bin/rofi-wifi-menu.sh"
                                 "$mainMod, I, exec, rofi -show emoji -modi emoji"
                                 "$mainMod, Escape, exec, ~/.local/bin/power-menu.sh"
-                                "$mainMod, B, exec, flatpak run app.zen_browser.zen"
+                                "$mainMod, B, exec, $browser"
                                 ", Print, exec, ~/.local/bin/screenshot-menu.sh"
                                 "$mainMod, left, movefocus, l"
                                 "$mainMod, right, movefocus, r"

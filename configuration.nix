@@ -42,6 +42,7 @@
                 zsh-syntax-highlighting
                 nerd-fonts.jetbrains-mono
                 papirus-icon-theme
+                bibata-cursors
                 ## Catppuccin
                 catppuccin-gtk
                 catppuccin-grub
