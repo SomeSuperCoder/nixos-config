@@ -24,6 +24,7 @@
                 btop
                 git
                 fzf
+                psmisc
 
 		# Hyprland
    		rofi
@@ -34,6 +35,7 @@
                 wl-clipboard
                 hyprlock
                 hyprshot
+                pavucontrol
 
                 # Themes
                 zsh-syntax-highlighting

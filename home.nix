@@ -12,5 +12,6 @@
                 ./home/zsh.nix
 
                 ./home/hypr/hyprland.nix
+                ./home/hypr/waybar.nix
 	];
 }
