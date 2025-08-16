@@ -12,7 +12,7 @@
 			theme = {
 				enable = true;
 				name = "catppuccin";
-				style = "mocha";
+				style = "macchiato";
 			};
 			
 			statusline.lualine.enable = true;
