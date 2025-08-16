@@ -10,6 +10,7 @@
 		./home/neovim.nix
                 ./home/kitty.nix
                 ./home/zsh.nix
+		./home/tmux.nix
 
                 ./home/hypr/hyprland.nix
                 ./home/hypr/waybar.nix
