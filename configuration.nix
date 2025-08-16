@@ -25,6 +25,9 @@
                 git
                 fzf
                 psmisc
+                cmatrix
+                unimatrix
+                cava
 
 		# Hyprland
                 wofi
