@@ -18,7 +18,7 @@
                         in {
                                 rebuild-system = "sudo nixos-rebuild switch --flake ${flakePath}";
                                 hms = "home-manager switch --flake ${flakePath}";
-                                edit-nixos-config = "nvim ${flakePath}";
+                                edit-nixos-config = "cd ${flakePath} && nvim";
                                 collect-garbage = "sudo nix-collect-garbage -d && rebuild-system";
                         };
         };

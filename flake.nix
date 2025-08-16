@@ -9,11 +9,13 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-                nvf.url = "github:notashelf/nvf";
+                nixvim.url = "github:nix-community/nixvim";
+                nixvim.inputs.nixpkgs.follows = "nixpkgs";
+
                 catppuccin.url = "github:catppuccin/nix";
 	};
 
-	outputs = { nixpkgs, home-manager, nvf, catppuccin, ... }:
+	outputs = { nixpkgs, home-manager, nixvim, catppuccin, ... }:
 		let
 			system = "x86_64-linux";
 		in {
@@ -24,7 +26,7 @@
 
 		homeConfigurations.allen = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
-			modules = [ ./home.nix nvf.homeManagerModules.default catppuccin.homeModules.catppuccin ];
+			modules = [ ./home.nix nixvim.homeModules.nixvim catppuccin.homeModules.catppuccin ];
 		};
 	};
 }
