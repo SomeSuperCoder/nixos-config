@@ -19,8 +19,11 @@
 	    web-devicons.enable = true;
 	    treesitter.enable = true;
 	    commentary.enable = true;
-	    notify.enable = true;
-	    dashboard.enable = true;
+
+	    alpha = {
+		enable = true;
+		theme = "dashboard";
+	    };
 
 	    neo-tree = {
 		enable = true;
@@ -30,7 +33,16 @@
 		enableRefreshOnWrite = true;
 		closeIfLastWindow = true;
 	    };
-
+	    notify = {
+		enable = true;
+		settings = {
+		    backgroundColour = "#1e1e2e";
+		    fps = 60;
+		    settings.render = "default";
+		    timeout = 500;
+		    topDown = true;
+		};
+	    };
 	    cmp = {
 		enable = true;
 		autoEnableSources = true;
@@ -53,7 +65,26 @@
 	    lsp = {
 		enable = true;
 		servers = {
-		    nil_ls.enable = true;
+		    nixd.enable = true;
+		    gopls.enable = true;
+		    pyright.enable = true;
+		    rust_analyzer = {
+			enable = true;
+			installCargo = true;
+			installRustc = true;
+		    };
+		};
+		keymaps = {
+		    silent = true;
+		    lspBuf = {
+			gd = "definition";
+			gD = "declaration";
+			gi = "implementation";
+			gr = "references";
+			K = "hover";
+			"<leader>rn" = "rename";
+			"<leader>ca" = "code_action";
+		    };
 		};
 	    };
 	};
