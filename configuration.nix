@@ -28,6 +28,9 @@
                 unimatrix
                 cava
 
+		# CLI workflow
+		ripgrep
+
 		# Hyprland
                 wofi
                 waybar
