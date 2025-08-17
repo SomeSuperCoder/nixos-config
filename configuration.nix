@@ -28,8 +28,11 @@
                 unimatrix
                 cava
 
-		# CLI workflow
+		# *Powerful* CLI apps
+		zoxide
+		fd
 		ripgrep
+		gemini-cli
 
 		# Hyprland
                 wofi
@@ -57,6 +60,10 @@
                 # Programming languages
                 go
                 python314
+		rustc
+		cargo
+		nodejs
+		deno
 
                 # DPI bypass software
                 zapret
@@ -66,6 +73,16 @@
                 fastfetch
                 pfetch
                 microfetch
+
+		# Funny CLI apps ;)
+		fortune
+		bb
+		figlet
+		toilet
+		cowsay
+		sl
+		pipes
+		cbonsai
         ];
  
         # Enables flakes
