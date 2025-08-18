@@ -19,6 +19,7 @@
 	    web-devicons.enable = true;
 	    treesitter.enable = true;
 	    commentary.enable = true;
+	    which-key.enable = true;
 
 	    alpha = {
 		enable = true;
