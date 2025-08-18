@@ -4,6 +4,7 @@
     boot.loader.grub.enable = true;
     boot.loader.grub.efiSupport = true;
     boot.loader.grub.device = "/dev/sda";
+    boot.loader.efi.canTouchEfiVariables = true;
     catppuccin.grub.enable = true;
     catppuccin.grub.flavor = "macchiato";
 
