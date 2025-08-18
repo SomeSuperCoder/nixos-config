@@ -10,10 +10,11 @@
 		./modules/dpi.nix
 		./modules/users.nix
 		./modules/netandtime.nix
+		./modules/autoremove.nix
         ];
 
         nix.settings.experimental-features = ["nix-command" "flakes" ];
-
+	
         # Most users should NEVER change this value after the initial install, for any reason,
         # even if you've upgraded your system to a new NixOS release.
         system.stateVersion = "25.05";
