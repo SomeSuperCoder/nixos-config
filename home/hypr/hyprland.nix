@@ -143,6 +143,7 @@
                                 "$mainMod, B, exec, $browser"
                                 "$mainMod, L, exec, hyprlock"
                                 "$mainMod, H, exec, hyprlock & systemctl hybrid-sleep"
+				"$mainMod, T, exec, nwg-look"
                                 
                                 # Hyprshot)))
                                 ", Print, exec, echo 'aHlwcnNob3QgLW0gJChwcmludGYgIm91dHB1dFxud2luZG93XG5yZWdpb24iIHwgd29maSAtLXNob3cgZG1lbnUpCg==' | base64 -d | bash"
