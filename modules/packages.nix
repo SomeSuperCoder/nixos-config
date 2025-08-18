@@ -67,6 +67,7 @@
 	fastfetch
 	pfetch
 	microfetch
+	ufetch
 
 # Funny CLI apps ;)
 	fortune

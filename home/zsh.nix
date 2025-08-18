@@ -21,6 +21,7 @@
                                 edit-nixos-config = "cd ${flakePath} && nvim && cd -";
                                 collect-garbage = "sudo nix-collect-garbage -d && rebuild-system";
 				update-system = "sudo echo && cd ${flakePath} && nix flake update && rebuild-system --upgrade && hms && cd -";
+				package-install = "nvim ${flakePath}/modules/packages.nix && rebuild-system";
                         };
         };
 }
