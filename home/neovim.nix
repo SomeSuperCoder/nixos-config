@@ -20,6 +20,7 @@
 	    treesitter.enable = true;
 	    commentary.enable = true;
 	    which-key.enable = true;
+	    trouble.enable = true;
 
 	    alpha = {
 		enable = true;
