@@ -79,7 +79,7 @@
                         exec-once = [
                                 "hyprctl setcursor Bibata-Modern-Classic 24"
                                 "swww-daemon"
-                                "waybar & nm-applet"
+                                "waybar & nm-applet & blueman-applet"
                                 "wl-paste --type text --watch cliphist store"
                                 "wl-paste --type image --watch cliphist store"
                         ];
