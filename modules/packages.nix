@@ -14,19 +14,16 @@
 # Regular system packages
 	wget 
 	tree
-	btop
-	git
-	fzf
 	psmisc
-	cmatrix
-	unimatrix
-	cava
 
-# *Powerful* CLI apps
+# CLI apps
 	zoxide
 	fd
 	ripgrep
 	gemini-cli
+	btop
+	fzf
+	git
 
 # Hyprland
 	wofi
@@ -78,5 +75,8 @@
 	sl
 	pipes
 	cbonsai
+	cmatrix
+	unimatrix
+	cava
 	];
 }
