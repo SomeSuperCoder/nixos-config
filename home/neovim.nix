@@ -21,6 +21,12 @@
 	    commentary.enable = true;
 	    which-key.enable = true;
 	    trouble.enable = true;
+	    otter.enable = true;
+	    /* Dependency for otter */ treesitter.settings.highlight.enable = true;
+
+	    tiny-inline-diagnostic = {
+		enable = true;
+	    };
 
 	    alpha = {
 		enable = true;
