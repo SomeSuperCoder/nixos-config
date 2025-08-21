@@ -84,6 +84,7 @@
 
                         animations = {
                                 bezier = [
+					"myBezier, 0.05, 0.9, 0.1, 1.05"
                                         "easeOutQuint,0.23,1,0.32,1"
                                         "easeInOutCubic,0.65,0.05,0.36,1"
                                         "linear,0,0,1,1" 
@@ -96,7 +97,7 @@
                                 animation = [
                                         "global, 1, 10, default"
                                         "border, 1, 5.39, easeOutQuint"
-                                        "windows, 1, 4.79, easeOutQuint"
+                                        "windows, 1, 4.79, myBezier"
                                         "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
                                         "windowsOut, 1, 1.49, linear, popin 87%"
                                         "fadeIn, 1, 1.73, almostLinear"
