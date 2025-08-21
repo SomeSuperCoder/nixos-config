@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 {
         wayland.windowManager.hyprland = {
                 enable = true;
@@ -7,7 +5,7 @@
                 settings = {
                         "$terminal" = "kitty";
                         "$fileManager" = "nautilus -w";
-                        "$menu" = "wofi --show drun";
+                        "$menu" = "rofi -show drun -show-icons -icon-theme Papirus";
                         "$browser" = "firefox";
 
                         monitor = ",preferred,auto,auto";
