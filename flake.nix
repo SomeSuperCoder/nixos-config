@@ -13,6 +13,8 @@
                 nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
                 catppuccin.url = "github:catppuccin/nix";
+
+		zen-browser.url = "github:MarceColl/zen-browser-flake";
 	};
 
 	outputs = { nixpkgs, home-manager, nixvim, catppuccin, ... }:

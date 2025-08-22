@@ -1,5 +1,3 @@
-{pkgs, ... }:
-
 {
     programs.nixvim = {
 	enable = true;
@@ -76,6 +74,7 @@
 		    nixd.enable = true;
 		    gopls.enable = true;
 		    pyright.enable = true;
+		    ts_ls.enable = true;
 		    rust_analyzer = {
 			enable = true;
 			installCargo = true;

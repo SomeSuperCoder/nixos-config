@@ -1,82 +1,95 @@
 { pkgs, ... }:
 
-{ environment.systemPackages = with pkgs; [
+{
+	nixpkgs.config.allowUnfree = true;
+	environment.systemPackages = with pkgs; [
 # Super important
-    home-manager
+		home-manager
 
 # Graphical apps
-	firefox
-	telegram-desktop
-	ghostty
-	gnome-tweaks
-	nwg-look
+			firefox
+			telegram-desktop
+			ghostty
+			gnome-tweaks
+			nwg-look
+			kdePackages.kdenlive
+			xournalpp
+			obsidian
 
 # Regular system packages
-	wget 
-	tree
-	psmisc
+			wget 
+			tree
+			psmisc
 
 # CLI apps
-	zoxide
-	fd
-	ripgrep
-	gemini-cli
-	btop
-	fzf
-	git
+			zoxide
+			fd
+			ripgrep
+			gemini-cli
+			btop
+			fzf
+			git
 
 # Hyprland
-	wofi
-	waybar
-	swww
-	swaynotificationcenter
-	libnotify
-	kitty
-	wl-clipboard
-	hyprlock
-	hyprshot
-	pavucontrol
-	networkmanagerapplet
-	playerctl
+			wofi
+			waybar
+			swww
+			swaynotificationcenter
+			libnotify
+			kitty
+			wl-clipboard
+			hyprlock
+			hyprshot
+			pavucontrol
+			networkmanagerapplet
+			playerctl
 
 # Themes
-	zsh-syntax-highlighting
-	nerd-fonts.jetbrains-mono
-	bibata-cursors
+			zsh-syntax-highlighting
+			nerd-fonts.jetbrains-mono
+			bibata-cursors
+			candy-icons
 ## Catppuccin
-	catppuccin-gtk
-	catppuccin-grub
-	catppuccin-papirus-folders
+			catppuccin-gtk
+			catppuccin-grub
+			catppuccin-papirus-folders
+
+# Rofi
+			rofi-calc
+			rofi-emoji
 
 # Programming languages
-	go
-	python314
-	rustc
-	cargo
-	nodejs
-	deno
+			go
+			python314
+			rustc
+			cargo
+			nodejs
+			deno
 
 # DPI bypass software
-	zapret
+			zapret
 
 # Fetches
-	neofetch
-	fastfetch
-	pfetch
-	microfetch
-	ufetch
+			neofetch
+			fastfetch
+			pfetch
+			microfetch
+			ufetch
 
 # Funny CLI apps ;)
-	fortune
-	bb
-	figlet
-	toilet
-	cowsay
-	sl
-	pipes
-	cbonsai
-	cmatrix
-	unimatrix
-	cava
-	];
+			fortune
+			bb
+			figlet
+			toilet
+			cowsay
+			sl
+			pipes
+			cbonsai
+			cmatrix
+			unimatrix
+			cava
+			lolcat
+# **Custom scripts**
+# (import ../scripts/wallpapers.nix { inherit pkgs; })
+			];
 }
