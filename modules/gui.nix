@@ -2,8 +2,17 @@
 
 {
         services.xserver.enable = true;
+	services.xserver.excludePackages = [ pkgs.xterm ];
         services.xserver.displayManager.gdm.enable = true;
         services.xserver.desktopManager.gnome.enable = true;
+	environment.gnome.excludePackages = with pkgs; [
+	    gnome-console
+	    # gnome-contacts
+	    # gnome-text-editor
+	    # gnome-system-monitor
+	    # gnome-disk-utility
+	    # gnome-music
+	];
 
         programs.hyprland = {
                 enable = true;

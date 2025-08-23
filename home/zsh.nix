@@ -22,6 +22,14 @@
                                 collect-garbage = "sudo nix-collect-garbage -d && rebuild-system";
 				update-system = "sudo echo && cd ${flakePath} && nix flake update && rebuild-system --upgrade && hms && cd -";
 				package-install = "nvim ${flakePath}/modules/packages.nix && rebuild-system";
+				cat = "bat";
                         };
         };
+
+	# Commands
+	programs.bat.enable = true;
+	catppuccin.bat = {
+	    enable = true;
+	    flavor = "macchiato";
+	};
 }

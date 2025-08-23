@@ -22,10 +22,8 @@
                                 modules-right = [
                                         "tray"
                                         # "hyprland/language"
-                                        # "backlight"
                                         "wireplumber"
-                                        # "battery"
-                                        # "disk"
+                                        "battery"
                                         "memory"
                                         "cpu"
                                         "temperature"
@@ -59,102 +57,114 @@
                                         format ="{:%H:%M:%S}";
                                 };
 
-                                "hyprland/workspaces" = {
-                                        show-special = true;
-                                        persistent-workspaces = {
-                                                "*" = [1 2 3 4 5 6 7 8 9 10];
-                                        };
-                                        format = "{icon}";
-                                        format-icons = {
-                                                active = "";
-                                                empty = "";
-                                                default = "";
-                                                urgent = "";
-                                                special = "󰠱";
-                                        };
-                                };
+				battery = {
+				    interval = 10;
+				    format = "{icon}{capacity}%";
+				    format-icons = [ "󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
+				    tooltip = true;
+				    tooltip-format = "{timeTo}";
+				};
 
-                                "hyprland/window" = {
-                                        icon = true;
-                                        icon-size = 20;
-                                        rewrite = {
-                                                "^$" = "Desktop";
-                                        };
-                                        max-length = 50;
-                                };
-                        };
-                };
-                style = ''
-window#waybar {
-    font-family: "JetBrains Mono NerdFont";
-    background-color: rgba(0,0,0,0);
-    font-size: 1rem;
-    border-radius: 0.5rem;
-        color: white;
-}
+				"hyprland/workspaces" = {
+				    show-special = true;
+				    persistent-workspaces = {
+					"*" = [1 2 3 4 5 6 7 8 9 10];
+				    };
+				    format = "{icon}";
+				    format-icons = {
+					active = "";
+					empty = "";
+					default = "";
+					urgent = "";
+					special = "󰠱";
+				    };
+				};
+
+				"hyprland/window" = {
+				    icon = true;
+				    icon-size = 20;
+				    rewrite = {
+					"^$" = "Desktop";
+				    };
+				    max-length = 50;
+				};
+
+				"hyprland/language" = {
+				    format = "{short}";
+				};
+			};
+		};
+		style = ''
+		    window#waybar {
+			font-family: "JetBrains Mono NerdFont";
+			background-color: rgba(0,0,0,0);
+			font-size: 1rem;
+			border-radius: 0.5rem;
+color: white;
+		    }
 
 
-.modules-left, .modules-center {
-    opacity: 1;
-    /* background: linear-gradient(45deg, rgb(214, 39, 200), rgb(5, 83, 252)); */
-    border-radius: 0.5rem;
-    padding: 2px;
-}
+		.modules-left, .modules-center {
+opacity: 1;
+	 /* background: linear-gradient(45deg, rgb(214, 39, 200), rgb(5, 83, 252)); */
+	 border-radius: 0.5rem;
+padding: 2px;
+		}
 
-.modules-right {
-    opacity: 1;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 0.5rem;
-    padding: 2px 2px 2px 10px
-}
+		.modules-right {
+opacity: 1;
+	 background-color: rgba(0,0,0,0.5);
+	 border-radius: 0.5rem;
+padding: 2px 2px 2px 10px
+		}
 
-.modules-left, .modules-center, .modules-right * {
-    margin: 0 3px;
-}
+		.modules-left, .modules-center, .modules-right * {
+margin: 0 3px;
+		}
 
 #workspaces {
     background-color: rgba(0,0,0,0.5);
     border-radius: 0.5rem;
-    padding: 0 2px;
+padding: 0 2px;
 }
 
 #workspaces button {
-        color: white;
-    font-size: 0.6rem;
-    padding: 0 0.3rem 0 0;
+color: white;
+       font-size: 0.6rem;
+padding: 0 0.3rem 0 0;
 }
 
 #window {
     background-color: rgba(0,0,0,0.5);
     border-radius: 0.5rem;
-    padding: 2px 5px;
+padding: 2px 5px;
 }
 
 #clock {
     font-weight: bolder;
     border-radius: 0.5rem;
-    padding: 0 3px 0 0;
+padding: 0 3px 0 0;
 }
 
 #battery {
-    color: lightgreen;
+color: lightgreen;
 }
 
 #memory {
-    color: lightpink;
+color: lightpink;
 }
 
 #disk {
-    color: lightskyblue;
+color: lightskyblue;
 }
 
 #cpu {
-    color: lightgoldenrodyellow;
+color: lightgoldenrodyellow;
 }
 
 #temperature {
-    color: lightslategray;
+color: lightslategray;
 }
-                '';
-        };
+'';
+};
 }

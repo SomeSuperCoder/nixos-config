@@ -15,6 +15,7 @@
 			kdePackages.kdenlive
 			xournalpp
 			obsidian
+			musicpod	
 
 # Regular system packages
 			wget 
