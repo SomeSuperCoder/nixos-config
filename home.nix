@@ -11,9 +11,10 @@
                 ./home/kitty.nix
                 ./home/zsh.nix
 		./home/tmux.nix
-		./home/hypr/rofi.nix
 
                 ./home/hypr/hyprland.nix
+		./home/hypr/hypridle.nix
                 ./home/hypr/waybar.nix
+		./home/hypr/rofi.nix
 	];
 }
