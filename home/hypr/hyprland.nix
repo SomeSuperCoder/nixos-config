@@ -182,31 +182,43 @@
 
                                 "$mainMod ALT, left, workspace, -1"
                                 "$mainMod ALT, right, workspace, +1"
-                        ];
 
-                        bindm = [
-                                "$mainMod, mouse:272, movewindow"
-                                "$mainMod, mouse:273, resizewindow"
-                        ];
+# Resize windows
+				"$mainMod SHIFT, right, resizeactive, 10 0"
+				"$mainMod SHIFT, left, resizeactive, -10 0"
+				"$mainMod SHIFT, up, resizeactive, 0 -10"
+				"$mainMod SHIFT, down, resizeactive, 0 10"
 
-                        bindl = [
-                                ",XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
-                                ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-                                ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-                                ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-                                ",XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 5%+"
-                                ",XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%-"
+# Move windows
+				"$mainMod CTRL, right, movewindow, r"
+				"$mainMod CTRL, left, movewindow, l"
+				"$mainMod CTRL, up, movewindow, u"
+				"$mainMod CTRL, down, movewindow, d"
+				];
 
-                                ", XF86AudioNext, exec, playerctl next"
-                                ", XF86AudioPause, exec, playerctl play-pause"
-                                ", XF86AudioPlay, exec, playerctl play-pause"
-                                ", XF86AudioPrev, exec, playerctl previous"
-                        ];
+			bindm = [
+			    "$mainMod, mouse:272, movewindow"
+				"$mainMod, mouse:273, resizewindow"
+			];
 
-                        windowrule = [
-                                "suppressevent maximize, class:.*"
-                                "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-                        ];
-                };
-        };
+			bindl = [
+			    ",XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
+				",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+				",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+				",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+				",XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 5%+"
+				",XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%-"
+
+				", XF86AudioNext, exec, playerctl next"
+				", XF86AudioPause, exec, playerctl play-pause"
+				", XF86AudioPlay, exec, playerctl play-pause"
+				", XF86AudioPrev, exec, playerctl previous"
+			];
+
+			windowrule = [
+			    "suppressevent maximize, class:.*"
+				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+			];
+		};
+	};
 }
