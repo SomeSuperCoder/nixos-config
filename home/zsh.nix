@@ -1,8 +1,10 @@
-{ pkgs, ... }:
-
 {
 	programs.zsh = {
 		enable = true;
+
+		initContent = ''
+		eval "$(zoxide init zsh)"
+		'';
 		
 		syntaxHighlighting.enable = true;
 		
@@ -23,6 +25,7 @@
 				update-system = "sudo echo && cd ${flakePath} && nix flake update && rebuild-system --upgrade && hms && cd -";
 				package-install = "nvim ${flakePath}/modules/packages.nix && rebuild-system";
 				cat = "bat";
+				cd = "z";
                         };
         };
 
