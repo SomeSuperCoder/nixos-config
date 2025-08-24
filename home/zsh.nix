@@ -4,7 +4,7 @@
 
 		initContent = ''
 		if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-		    exec tmux
+		    exec tmux a
 		fi
 
 		eval "$(zoxide init zsh)"
