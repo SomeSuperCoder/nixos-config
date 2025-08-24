@@ -4,13 +4,13 @@
 	settings = {
 	    general = {
 		ignore_dbus_inhibit = false;
-		lock_cmd = "hyprlock & systemctl suspend";
+		lock_cmd = "hyprlock & sleep 0.5 && systemctl suspend";
 	    };
 
 	    listener = [
 	    {
 		timeout = 300;
-		on-timeout = "hyprlock & systemctl suspend";
+		on-timeout = "hyprlock & sleep 0.5 && systemctl suspend";
 	    }
 	    ];
 	};

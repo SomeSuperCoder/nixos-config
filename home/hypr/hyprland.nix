@@ -141,7 +141,7 @@
                                 "$mainMod, J, togglesplit,"
                                 "$mainMod, B, exec, $browser"
                                 "$mainMod, L, exec, hyprlock"
-                                "$mainMod, H, exec, hyprlock & systemctl suspend"
+                                "$mainMod, H, exec, hyprlock & sleep 0.5 && systemctl suspend"
 				"$mainMod, T, exec, nwg-look"
                                 
                                 # Hyprshot)))
