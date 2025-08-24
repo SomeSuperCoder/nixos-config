@@ -31,6 +31,7 @@
 			btop
 			fzf
 			git
+			w3m-full
 
 # Hyprland
 			wofi
