@@ -218,6 +218,12 @@
 			windowrule = [
 			    "suppressevent maximize, class:.*"
 				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+				# Pavucontrol
+				"float,title:(Volume Control)"
+				"center,title:(Volume Control)"
+				"opacity 0.7,title:(Volume Control)"
+				"pin,title:(Volume Control)"
+				"minsize 800 300,title:(Volume Control)"
 			];
 		};
 	};
