@@ -221,7 +221,7 @@
 				# Pavucontrol
 				"float,class:(org.pulseaudio.pavucontrol)"
 				"center,class:(org.pulseaudio.pavucontrol)"
-				"opacity 0.6,class:(org.pulseaudio.pavucontrol)"
+				"opacity 0.7,class:(org.pulseaudio.pavucontrol)"
 				"pin,class:(org.pulseaudio.pavucontrol)"
 				"minsize 800 300,class:(org.pulseaudio.pavucontrol)"
 				# Rofi
