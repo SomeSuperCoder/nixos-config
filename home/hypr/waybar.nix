@@ -22,7 +22,10 @@
                                 modules-right = [
                                         "tray"
                                         # "hyprland/language"
+					"idle_inhibitor"
+					"backlight"
                                         "wireplumber"
+					"disk"
                                         "battery"
                                         "memory"
                                         "cpu"
@@ -30,32 +33,53 @@
                                         "clock"
                                 ];
 
-                                wireplumber = {
-                                        format = "{icon} {volume}%";
-                                        format-muted = "󰝟";
-                                        on-click = "pavucontrol";
-                                        format-icons = ["" "" "" "" ""];
-                                };
+				idle_inhibitor = {
+				    format = "{icon}";
+				    format-icons = {
+					activated = "󰛊 ";
+					deactivated = "󰾫 ";
+				    };
+				};
 
-                                memory = {
-                                        interval = 10;
-                                        format = " {used}";
-                                        tooltip-format = "{used}GiB used of {total}GiB ({percentage}%)";
-                                };
+				backlight = {
+				    interval = 2;
+				    format = "󰖨 {percent}%";
+				    on-scroll-up = "brightnessctl set +4";
+				    on-scroll-down = "brightnessctl set 4-";
+				};
 
-                                cpu = {
-                                        interval = 10;
-                                        format = " {usage}%";
-                                };
+				wireplumber = {
+				    format = "{icon} {volume}%";
+				    format-muted = "󰝟";
+				    on-click = "pavucontrol";
+				    format-icons = ["" "" "" "" ""];
+				};
 
-                                temperature = {
-                                        interval = 10;
-                                };
+				disk = {
+				    intervel = 30;
+				    format = "󰋊 {percentage_used}%";
+				    tooltip-format = "{used} used out of {total} on \"{path}\" ({percentage_used}%)";
+				};
 
-                                clock = {
-                                        interval = 1;
-                                        format ="{:%H:%M:%S}";
-                                };
+				memory = {
+				    interval = 10;
+				    format = " {used}";
+				    tooltip-format = "{used}GiB used of {total}GiB ({percentage}%)";
+				};
+
+				cpu = {
+				    interval = 10;
+				    format = " {usage}%";
+				};
+
+				temperature = {
+				    interval = 10;
+				};
+
+				clock = {
+				    interval = 1;
+				    format ="{:%H:%M:%S}";
+				};
 
 				battery = {
 				    interval = 10;

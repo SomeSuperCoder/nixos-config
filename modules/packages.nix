@@ -17,6 +17,9 @@
 			obsidian
 			musicpod
 			gnome-boxes
+			gimp
+			krita
+			obs-studio
 
 # Regular system packages
 			wget 
@@ -46,6 +49,7 @@
 			pavucontrol
 			networkmanagerapplet
 			playerctl
+			brightnessctl
 
 # Themes
 			zsh-syntax-highlighting
