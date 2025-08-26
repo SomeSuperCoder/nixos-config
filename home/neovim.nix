@@ -20,8 +20,8 @@
 	    which-key.enable = true;
 	    trouble.enable = true;
 	    otter.enable = true;
-	    autoclose.enable = true;
 	    /* Dependency for otter */ treesitter.settings.highlight.enable = true;
+	    autoclose.enable = true;
 
 	    tiny-inline-diagnostic = {
 		enable = true;
@@ -57,6 +57,8 @@
 		{ name = "nvim_lsp"; }
 		{ name = "path"; }
 		{ name = "buffer"; }
+		{ name = "emmet_ls"; }
+		{ name = "tailwindcss"; }
 		];
 		settings.mapping = {
 		    "<C-Space>" = "cmp.mapping.complete()";
@@ -72,15 +74,17 @@
 	    lsp = {
 		enable = true;
 		servers = {
-		    nixd.enable = true;
+		    nil_ls.enable = true;
 		    gopls.enable = true;
 		    pyright.enable = true;
 		    ts_ls.enable = true;
-		    rust_analyzer = {
-			enable = true;
-			installCargo = true;
-			installRustc = true;
-		    };
+		    # rust_analyzer = {
+			# enable = true;
+			# installCargo = true;
+			# installRustc = true;
+		    # };
+		    emmet_ls.enable = true;
+		    tailwindcss.enable = true;
 		};
 		keymaps = {
 		    silent = true;
@@ -95,6 +99,10 @@
 		    };
 		};
 	    };
+
+	    # conform-nvim = {
+		# enable = true;
+	    # };
 	};
 
 	keymaps = [
@@ -132,6 +140,11 @@
 	{
 	    action = "<cmd>Neotree toggle<CR>";
 	    key = "<leader>e";
+	}
+# Format via lsp
+	{
+	    action = "<cmd>lua vim.lsp.buf.format()<CR>";
+	    key = "<leader>lf";
 	}
 	];
     };
