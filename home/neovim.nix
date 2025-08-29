@@ -24,6 +24,7 @@
       */
       treesitter.settings.highlight.enable = true;
       autoclose.enable = true;
+      instant.enable = true;
 
       tiny-inline-diagnostic = {
         enable = true;

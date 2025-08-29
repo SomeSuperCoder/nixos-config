@@ -1,102 +1,107 @@
-{ pkgs, ... }:
+{pkgs, ...}: {
+  virtualisation.docker.enable = true;
+  nixpkgs.config.allowUnfree = true;
+  environment.systemPackages = with pkgs; [
+    # Super important
+    home-manager
 
-{
-    nixpkgs.config.allowUnfree = true;
-    environment.systemPackages = with pkgs; [
-# Super important
-	home-manager
+    # Graphical apps
+    firefox
+    telegram-desktop
+    ghostty
+    gnome-tweaks
+    nwg-look
+    kdePackages.kdenlive
+    xournalpp
+    obsidian
+    musicpod
+    gnome-boxes
+    gimp
+    krita
+    obs-studio
+    bruno
 
-# Graphical apps
-	    firefox
-	    telegram-desktop
-	    ghostty
-	    gnome-tweaks
-	    nwg-look
-	    kdePackages.kdenlive
-	    xournalpp
-	    obsidian
-	    musicpod
-	    gnome-boxes
-	    gimp
-	    krita
-	    obs-studio
+    # CLI apps
+    zoxide
+    fd
+    ripgrep
+    gemini-cli
+    btop
+    fzf
+    git
+    w3m-full
+    wget
+    tree
+    psmisc
 
-# Regular system packages
-	    wget 
-	    tree
-	    psmisc
+    # Hyprland
+    wofi
+    waybar
+    swww
+    swaynotificationcenter
+    libnotify
+    kitty
+    wl-clipboard
+    hyprlock
+    hyprshot
+    pavucontrol
+    networkmanagerapplet
+    playerctl
+    brightnessctl
 
-# CLI apps
-	    zoxide
-	    fd
-	    ripgrep
-	    gemini-cli
-	    btop
-	    fzf
-	    git
-	    w3m-full
+    # Themes
+    zsh-syntax-highlighting
+    nerd-fonts.jetbrains-mono
+    bibata-cursors
+    candy-icons
+    ## Catppuccin
+    catppuccin-gtk
+    catppuccin-grub
+    catppuccin-papirus-folders
 
-# Hyprland
-	    wofi
-	    waybar
-	    swww
-	    swaynotificationcenter
-	    libnotify
-	    kitty
-	    wl-clipboard
-	    hyprlock
-	    hyprshot
-	    pavucontrol
-	    networkmanagerapplet
-	    playerctl
-	    brightnessctl
+    # Rofi
+    rofi-calc
+    rofi-emoji
 
-# Themes
-	    zsh-syntax-highlighting
-	    nerd-fonts.jetbrains-mono
-	    bibata-cursors
-	    candy-icons
-## Catppuccin
-	    catppuccin-gtk
-	    catppuccin-grub
-	    catppuccin-papirus-folders
+    # Programming languages
+    go
+    python314
+    rustc
+    cargo
+    nodejs
+    deno
+    sqlite
 
-# Rofi
-	    rofi-calc
-	    rofi-emoji
+    # DevOps
+    minikube
+    kubectl
+    docker
+    docker-compose
 
-# Programming languages
-	    go
-	    python314
-	    rustc
-	    cargo
-	    nodejs
-	    deno
+    # DPI bypass software
+    zapret
 
-# DPI bypass software
-	    zapret
+    # Fetches
+    neofetch
+    fastfetch
+    pfetch
+    microfetch
+    ufetch
 
-# Fetches
-	    neofetch
-	    fastfetch
-	    pfetch
-	    microfetch
-	    ufetch
-
-# Funny CLI apps ;)
-	    fortune
-	    bb
-	    figlet
-	    toilet
-	    cowsay
-	    sl
-	    pipes
-	    cbonsai
-	    cmatrix
-	    unimatrix
-	    cava
-	    lolcat
-# **Custom scripts**
-# (import ../scripts/wallpapers.nix { inherit pkgs; })
-	    ];
+    # Funny CLI apps ;)
+    fortune
+    bb
+    figlet
+    toilet
+    cowsay
+    sl
+    pipes
+    cbonsai
+    cmatrix
+    unimatrix
+    cava
+    lolcat
+    # **Custom scripts**
+    # (import ../scripts/wallpapers.nix { inherit pkgs; })
+  ];
 }
