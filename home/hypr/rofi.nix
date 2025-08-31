@@ -1,11 +1,11 @@
-{
-    catppuccin.rofi = {
-	enable = true;
-	flavor = "mocha";
-    };
+{pkgs, ...}: {
+  catppuccin.rofi = {
+    enable = true;
+    flavor = "mocha";
+  };
 
-    programs.rofi = {
-	enable = true;
-    };
+  programs.rofi = {
+    enable = true;
+    package = pkgs.rofi-wayland;
+  };
 }
-
