@@ -1,5 +1,8 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  unstable = import <nixos-unstable> {};
+in {
   virtualisation.docker.enable = true;
+  environment.sessionVariables.ROFI_PLUGIN_PATH = "${pkgs.rofi-calc}/lib/rofi:${pkgs.rofi-emoji}/lib/rofi";
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Super important
@@ -33,6 +36,7 @@
     wget
     tree
     psmisc
+    mongosh
 
     # Hyprland
     wofi
@@ -64,7 +68,8 @@
     rofi-emoji
 
     # Programming languages
-    go
+    go_1_25
+    # go
     python314
     rustc
     cargo
