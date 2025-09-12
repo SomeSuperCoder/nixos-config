@@ -1,42 +1,41 @@
 {
-	programs.zsh = {
-		enable = true;
+  programs.zsh = {
+    enable = true;
 
-		initContent = ''
-		if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-		    exec tmux a
-		fi
+    initContent = ''
+      if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+          exec tmux a
+      fi
 
-		eval "$(zoxide init zsh)"
-		'';
-		
-		syntaxHighlighting.enable = true;
-		
-                oh-my-zsh = {
-                        enable = true;
+      eval "$(zoxide init zsh)"
+    '';
 
-                        theme = "robbyrussell";
-                };
+    syntaxHighlighting.enable = true;
 
-                shellAliases =
-                        let
-                                flakePath = "~/nixos-config";
-                        in {
-                                rebuild-system = "sudo nixos-rebuild switch --flake ${flakePath}";
-                                hms = "home-manager switch --flake ${flakePath}";
-                                edit-nixos-config = "cd ${flakePath} && nvim && cd -";
-                                collect-garbage = "sudo nix-collect-garbage -d && rebuild-system";
-				update-system = "sudo echo && cd ${flakePath} && nix flake update && rebuild-system --upgrade && hms && cd -";
-				package-install = "nvim ${flakePath}/modules/packages.nix && rebuild-system";
-				cat = "bat";
-				cd = "z";
-                        };
-        };
+    oh-my-zsh = {
+      enable = true;
 
-	# Commands
-	programs.bat.enable = true;
-	catppuccin.bat = {
-	    enable = true;
-	    flavor = "macchiato";
-	};
+      theme = "robbyrussell";
+    };
+
+    shellAliases = let
+      flakePath = "~/nixos-config";
+    in {
+      rebuild-system = "sudo nixos-rebuild switch --flake ${flakePath}";
+      hms = "home-manager switch --flake ${flakePath}";
+      edit-nixos-config = "cd ${flakePath} && nvim && cd -";
+      collect-garbage = "sudo nix-collect-garbage -d && rebuild-system";
+      update-system = "sudo echo && cd ${flakePath} && nix flake update && rebuild-system --upgrade && hms && cd -";
+      package-install = "nvim ${flakePath}/modules/packages.nix && rebuild-system";
+      cat = "bat";
+      cd = "z";
+    };
+  };
+
+  # Commands
+  programs.bat.enable = true;
+  catppuccin.bat = {
+    enable = true;
+    flavor = "macchiato";
+  };
 }

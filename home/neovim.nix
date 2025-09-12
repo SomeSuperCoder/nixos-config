@@ -1,4 +1,7 @@
 {pkgs, ...}: {
+  # Set the default editor to neovim
+  home.sessionVariables.EDITOR = "nvim";
+
   programs.nixvim = {
     enable = true;
     colorschemes.catppuccin.enable = true;
@@ -24,7 +27,10 @@
       */
       treesitter.settings.highlight.enable = true;
       autoclose.enable = true;
-      instant.enable = true;
+      instant = {
+        enable = true;
+        settings.username = "SomeSuperCoder";
+      };
 
       tiny-inline-diagnostic = {
         enable = true;

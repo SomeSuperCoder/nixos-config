@@ -1,9 +1,15 @@
 {pkgs, ...}: let
   unstable = import <nixos-unstable> {};
 in {
+  # Install docker
   virtualisation.docker.enable = true;
+  # Install openssh
+  services.openssh.enable = true;
+  # Make rofi plugins work
   environment.sessionVariables.ROFI_PLUGIN_PATH = "${pkgs.rofi-calc}/lib/rofi:${pkgs.rofi-emoji}/lib/rofi";
+  # Allow unfree software
   nixpkgs.config.allowUnfree = true;
+  # Actually install things
   environment.systemPackages = with pkgs; [
     # Super important
     home-manager
@@ -23,6 +29,8 @@ in {
     krita
     obs-studio
     bruno
+    libreoffice
+    anki-bin
 
     # CLI apps
     zoxide
@@ -37,6 +45,10 @@ in {
     tree
     psmisc
     mongosh
+    yazi
+    lynx
+    browsh
+    mpv
 
     # Hyprland
     wofi
@@ -58,6 +70,7 @@ in {
     nerd-fonts.jetbrains-mono
     bibata-cursors
     candy-icons
+    noto-fonts
     ## Catppuccin
     catppuccin-gtk
     catppuccin-grub
@@ -68,8 +81,7 @@ in {
     rofi-emoji
 
     # Programming languages
-    go_1_25
-    # go
+    go
     python314
     rustc
     cargo
