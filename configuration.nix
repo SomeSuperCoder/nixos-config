@@ -10,6 +10,7 @@
     ./modules/netandtime.nix
     ./modules/autoremove.nix
     ./modules/nix.nix
+    ./modules/fonts.nix
   ];
 
   # Most users should NEVER change this value after the initial install, for any reason,

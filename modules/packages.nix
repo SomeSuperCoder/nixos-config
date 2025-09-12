@@ -67,10 +67,8 @@ in {
 
     # Themes
     zsh-syntax-highlighting
-    nerd-fonts.jetbrains-mono
     bibata-cursors
     candy-icons
-    noto-fonts
     ## Catppuccin
     catppuccin-gtk
     catppuccin-grub
