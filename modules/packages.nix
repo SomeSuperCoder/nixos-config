@@ -1,6 +1,4 @@
-{pkgs, ...}: let
-  unstable = import <nixos-unstable> {};
-in {
+{pkgs, ...}: {
   # Install docker
   virtualisation.docker.enable = true;
   # Install openssh
@@ -16,6 +14,7 @@ in {
 
     # Graphical apps
     firefox
+    chromium
     telegram-desktop
     ghostty
     gnome-tweaks
