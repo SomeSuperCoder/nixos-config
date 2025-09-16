@@ -4,7 +4,7 @@
 
     settings = {
       "$terminal" = "kitty";
-      "$fileManager" = "nautilus -w";
+      "$fileManager" = "$terminal yazi";
       "$menu" = "rofi -show drun -show-icons -icon-theme Papirus";
       "$browser" = "firefox";
 
