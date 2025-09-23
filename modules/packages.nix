@@ -48,6 +48,7 @@
     lynx
     browsh
     mpv
+    gcc
 
     # Hyprland
     wofi
