@@ -26,11 +26,14 @@
       Dependency for otter
       */
       treesitter.settings.highlight.enable = true;
+      # ==============
       autoclose.enable = true;
       instant = {
         enable = true;
         settings.username = "SomeSuperCoder";
       };
+
+      cmp-tabnine.enable = true;
 
       tiny-inline-diagnostic = {
         enable = true;
@@ -68,6 +71,7 @@
           {name = "buffer";}
           {name = "emmet_ls";}
           {name = "tailwindcss";}
+          {name = "cmp_tabnine";}
         ];
         settings.mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
