@@ -31,6 +31,9 @@
     libreoffice
     anki-bin
     via
+    authenticator
+    popsicle
+    mousai
 
     # CLI apps
     zoxide
@@ -50,6 +53,9 @@
     browsh
     mpv
     gcc
+    duf
+    dysk
+    jq
 
     # Hyprland
     wofi
