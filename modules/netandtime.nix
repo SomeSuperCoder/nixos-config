@@ -7,6 +7,5 @@
 
   time.timeZone = "Europe/Moscow";
 
-  # TODO: enable the firewall back on
-  networking.firewall.enable = false;
+  networking.firewall.enable = true;
 }

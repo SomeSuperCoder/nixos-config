@@ -30,6 +30,7 @@
     bruno
     libreoffice
     anki-bin
+    via
 
     # CLI apps
     zoxide

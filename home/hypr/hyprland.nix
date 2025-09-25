@@ -62,9 +62,9 @@
         disable_hyprland_logo = true;
       };
 
-      gestures = {
-        workspace_swipe = true;
-      };
+      gesture = [
+        "3, horizontal, workspace"
+      ];
 
       env = [
         "XCURSOR_SIZE,24"
