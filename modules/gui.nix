@@ -12,7 +12,7 @@
     # gnome-music
   ];
 
-  services.xserver.libinput = {
+  services.libinput = {
     enable = true;
     # Additional configuration options
     touchpad = {
