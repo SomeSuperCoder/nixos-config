@@ -29,6 +29,7 @@
       package-install = "nvim ${flakePath}/modules/packages.nix && rebuild-system";
       cat = "bat";
       cd = "z";
+      ls = "lsd";
     };
   };
 

@@ -31,9 +31,11 @@
     libreoffice
     anki-bin
     via
+    vial
     authenticator
     popsicle
     mousai
+    feh
 
     # CLI apps
     zoxide
@@ -56,6 +58,7 @@
     duf
     dysk
     jq
+    lsd
 
     # Hyprland
     wofi

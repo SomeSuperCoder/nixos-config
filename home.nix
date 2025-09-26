@@ -11,6 +11,7 @@
     ./home/kitty.nix
     ./home/zsh.nix
     ./home/tmux.nix
+    ./home/firefox.nix
 
     ./home/hypr/hyprland.nix
     ./home/hypr/hypridle.nix

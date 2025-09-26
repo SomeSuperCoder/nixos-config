@@ -118,77 +118,81 @@
         };
       };
     };
-    style = ''
-      		    window#waybar {
-      			font-family: "JetBrains Mono NerdFont";
-      			background-color: rgba(0,0,0,0);
-      			font-size: 1rem;
-      			border-radius: 0.5rem;
-      color: white;
-      		    }
+    style =
+      /*
+      css
+      */
+      ''
+           		    window#waybar {
+           			font-family: "JetBrains Mono NerdFont";
+           			background-color: rgba(0,0,0,0);
+           			font-size: 1rem;
+           			border-radius: 0.5rem;
+           color: white;
+           		    }
 
 
-      		.modules-left, .modules-center {
-      opacity: 1;
-      	 /* background: linear-gradient(45deg, rgb(214, 39, 200), rgb(5, 83, 252)); */
-      	 border-radius: 0.5rem;
-      padding: 2px;
-      		}
+           		.modules-left, .modules-center {
+           opacity: 1;
+           	 /* background: linear-gradient(45deg, rgb(214, 39, 200), rgb(5, 83, 252)); */
+           	 border-radius: 0.5rem;
+           padding: 2px;
+           		}
 
-      		.modules-right {
-      opacity: 1;
-      	 background-color: rgba(0,0,0,0.5);
-      	 border-radius: 0.5rem;
-      padding: 2px 2px 2px 10px
-      		}
+           		.modules-right {
+           opacity: 1;
+           	 background-color: rgba(0,0,0,0.5);
+           	 border-radius: 0.5rem;
+           padding: 2px 2px 2px 10px
+           		}
 
-      		.modules-left, .modules-center, .modules-right * {
-      margin: 0 3px;
-      		}
+           		.modules-left, .modules-center, .modules-right * {
+           margin: 0 3px;
+           		}
 
-      #workspaces {
-          background-color: rgba(0,0,0,0.5);
-          border-radius: 0.5rem;
-      padding: 0 2px;
-      }
+           #workspaces {
+               background-color: rgba(0,0,0,0.5);
+               border-radius: 0.5rem;
+           padding: 0 2px;
+           }
 
-      #workspaces button {
-      color: white;
-             font-size: 0.6rem;
-      padding: 0 0.3rem 0 0;
-      }
+           #workspaces button {
+           color: white;
+                  font-size: 0.6rem;
+           padding: 0 0.3rem 0 0;
+           }
 
-      #window {
-          background-color: rgba(0,0,0,0.5);
-          border-radius: 0.5rem;
-      padding: 2px 5px;
-      }
+           #window {
+               background-color: rgba(0,0,0,0.5);
+               border-radius: 0.5rem;
+           padding: 2px 5px;
+           }
 
-      #clock {
-          font-weight: bolder;
-          border-radius: 0.5rem;
-      padding: 0 3px 0 0;
-      }
+           #clock {
+               font-weight: bolder;
+               border-radius: 0.5rem;
+           padding: 0 3px 0 0;
+           }
 
-      #battery {
-      color: lightgreen;
-      }
+           #battery {
+           color: lightgreen;
+           }
 
-      #memory {
-      color: lightpink;
-      }
+           #memory {
+        color: lightpink;
+           }
 
-      #disk {
-      color: lightskyblue;
-      }
+           #disk {
+        color: lightskyblue;
+           }
 
-      #cpu {
-      color: lightgoldenrodyellow;
-      }
+           #cpu {
+        color: lightgoldenrodyellow;
+           }
 
-      #temperature {
-      color: lightslategray;
-      }
-    '';
+           #temperature {
+        color: lightslategray;
+           }
+      '';
   };
 }
