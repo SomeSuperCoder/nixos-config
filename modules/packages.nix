@@ -19,7 +19,7 @@
     ghostty
     gnome-tweaks
     nwg-look
-    pitivi
+    kdePackages.kdenlive
     xournalpp
     obsidian
     musicpod
