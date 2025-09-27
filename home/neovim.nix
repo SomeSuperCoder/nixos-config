@@ -7,7 +7,7 @@
     colorschemes.catppuccin.enable = true;
 
     globalOpts = {
-      number = true;
+      relativenumber = true;
       shiftwidth = 4;
     };
 
