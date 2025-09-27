@@ -22,7 +22,7 @@
       flakePath = "~/nixos-config";
     in {
       rebuild-system = "sudo nixos-rebuild switch --flake ${flakePath}";
-      hms = "home-manager switch --flake ${flakePath}";
+      hms = "NIXPKGS_ALLOW_UNFREE=1 home-manager switch --flake ${flakePath} --impure";
       edit-nixos-config = "cd ${flakePath} && nvim && cd -";
       collect-garbage = "sudo nix-collect-garbage -d && rebuild-system";
       update-system = "sudo echo && cd ${flakePath} && nix flake update && rebuild-system --upgrade && hms && cd -";
