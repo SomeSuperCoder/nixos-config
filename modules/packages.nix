@@ -36,6 +36,7 @@
     popsicle
     mousai
     feh
+    blender
 
     # CLI apps
     zoxide
