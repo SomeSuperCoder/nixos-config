@@ -104,10 +104,16 @@
       lsp = {
         enable = true;
         servers = {
-          nil_ls.enable = true;
+          nixd.enable = true;
           gopls.enable = true;
           pyright.enable = true;
           ts_ls.enable = true;
+          eslint.enable = true;
+          html.enable = true;
+          cssls.enable = true;
+          bashls.enable = true;
+          dockerls.enable = true;
+          docker_compose_language_service.enable = true;
           # rust_analyzer = {
           # enable = true;
           # installCargo = true;
@@ -143,6 +149,8 @@
             typescriptreact = ["prettierd"];
             javascript = ["prettierd"];
             javascriptreact = ["prettierd"];
+            html = ["prettierd"];
+            css = ["prettierd"];
             nix = ["alejandra"];
           };
         };
