@@ -60,6 +60,10 @@
     dysk
     jq
     lsd
+    clang
+
+    openssl
+    pkg-config
 
     # Hyprland
     wofi
