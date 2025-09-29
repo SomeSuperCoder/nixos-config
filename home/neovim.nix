@@ -78,7 +78,7 @@
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";
           "<C-e>" = "cmp.mapping.close()";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
+          "<CR>" = "cmp.mapping.confirm({ select = false })";
           "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
         };
@@ -114,13 +114,14 @@
           bashls.enable = true;
           dockerls.enable = true;
           docker_compose_language_service.enable = true;
-          # rust_analyzer = {
-          # enable = true;
-          # installCargo = true;
-          # installRustc = true;
-          # };
+          rust_analyzer = {
+            enable = true;
+            installCargo = true;
+            installRustc = true;
+          };
           emmet_ls.enable = true;
           tailwindcss.enable = true;
+          clangd.enable = true;
         };
         keymaps = {
           silent = true;
