@@ -7,6 +7,7 @@
     colorschemes.catppuccin.enable = true;
 
     globalOpts = {
+      number = true;
       relativenumber = true;
       shiftwidth = 4;
     };
@@ -114,6 +115,7 @@
           bashls.enable = true;
           dockerls.enable = true;
           docker_compose_language_service.enable = true;
+          asm_lsp.enable = true;
           rust_analyzer = {
             enable = true;
             installCargo = true;

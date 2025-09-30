@@ -16,7 +16,7 @@
     firefox
     chromium
     telegram-desktop
-    ghostty
+    alacritty
     gnome-tweaks
     nwg-look
     kdePackages.kdenlive
@@ -55,12 +55,11 @@
     lynx
     browsh
     mpv
-    gcc
     duf
     dysk
     jq
     lsd
-    clang
+    file
 
     openssl
     pkg-config
@@ -71,7 +70,6 @@
     swww
     swaynotificationcenter
     libnotify
-    kitty
     wl-clipboard
     hyprlock
     hyprshot
@@ -93,7 +91,7 @@
     rofi-calc
     rofi-emoji
 
-    # Programming languages
+    # Programming
     go
     python314
     rustc
@@ -101,6 +99,10 @@
     nodejs
     deno
     sqlite
+    gcc
+    clang
+    tinygo
+    avrdude
 
     # DevOps
     minikube
