@@ -1,11 +1,22 @@
 {pkgs, ...}: {
+  hardware.graphics = {
+    enable = true;
+    # For Intel graphics specifically
+    extraPackages = with pkgs; [
+      intel-media-driver
+      vaapiIntel
+      vaapiVdpau
+      libvdpau-va-gl
+    ];
+  };
+
   services.xserver.enable = true;
   services.xserver.excludePackages = [pkgs.xterm];
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
   environment.gnome.excludePackages = with pkgs; [
     gnome-console
-    # gnome-contacts
+    # gnome-contact:
     # gnome-text-editor
     # gnome-system-monitor
     # gnome-disk-utility

@@ -5,11 +5,11 @@
   programs.nixvim = {
     enable = true;
     colorschemes.catppuccin.enable = true;
+    # colorschemes.gruvbox.enable = true;
 
     globalOpts = {
-      number = true;
       relativenumber = true;
-      shiftwidth = 4;
+      shiftwidth = 2;
     };
 
     globals.mapleader = " ";
@@ -33,8 +33,6 @@
         enable = true;
         settings.username = "SomeSuperCoder";
       };
-
-      cmp-tabnine.enable = true;
 
       tiny-inline-diagnostic = {
         enable = true;
@@ -72,7 +70,6 @@
           {name = "buffer";}
           {name = "emmet_ls";}
           {name = "tailwindcss";}
-          {name = "cmp_tabnine";}
         ];
         settings.mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
@@ -124,6 +121,7 @@
           emmet_ls.enable = true;
           tailwindcss.enable = true;
           clangd.enable = true;
+          arduino_language_server.enable = true;
         };
         keymaps = {
           silent = true;

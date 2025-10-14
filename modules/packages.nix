@@ -7,6 +7,8 @@
   environment.sessionVariables.ROFI_PLUGIN_PATH = "${pkgs.rofi-calc}/lib/rofi:${pkgs.rofi-emoji}/lib/rofi";
   # Allow unfree software
   nixpkgs.config.allowUnfree = true;
+  # Flatpak
+  # services.flatpak.enable = true;
   # Actually install things
   environment.systemPackages = with pkgs; [
     # Super important
@@ -37,6 +39,7 @@
     mousai
     feh
     blender
+    prismlauncher
 
     # CLI apps
     zoxide
@@ -60,9 +63,16 @@
     jq
     lsd
     file
+    autossh
+    k6
+    gnumake
+    dnsutils
 
     openssl
     pkg-config
+    glfw
+    libGL
+    glfw-wayland
 
     # Hyprland
     wofi
@@ -103,6 +113,8 @@
     clang
     tinygo
     avrdude
+    openjdk
+    arduino-cli
 
     # DevOps
     minikube

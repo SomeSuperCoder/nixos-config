@@ -7,5 +7,12 @@
 
   time.timeZone = "Europe/Moscow";
 
-  networking.firewall.enable = true;
+  networking.hosts = {
+    "127.0.0.1" = ["api.hframe.org"];
+  };
+
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [22 80 8080 8090];
+  };
 }
