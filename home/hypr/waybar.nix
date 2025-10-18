@@ -21,7 +21,7 @@
 
         modules-right = [
           "tray"
-          "hyprland/language"
+          # "hyprland/language"
           "idle_inhibitor"
           "backlight"
           "wireplumber"

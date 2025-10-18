@@ -80,6 +80,7 @@
         "waybar & nm-applet & blueman-applet"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
+        "fcitx5 -d -r"
       ];
 
       animations = {
@@ -98,8 +99,8 @@
       };
 
       input = {
-        kb_layout = "us,es,ru";
-        kb_options = "grp:win_space_toggle,caps:escape";
+        # kb_layout = "us,es,ru";
+        # kb_options = "grp:win_space_toggle,caps:escape";
 
         follow_mouse = 1;
 
