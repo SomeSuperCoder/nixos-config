@@ -1,4 +1,6 @@
 {pkgs, ...}: {
+  # QMK
+  services.udev.packages = with pkgs; [qmk vial];
   # Install docker
   virtualisation.docker.enable = true;
   # Install openssh
@@ -32,14 +34,14 @@
     bruno
     libreoffice
     anki-bin
-    via
-    vial
     authenticator
     popsicle
     mousai
     feh
     blender
-    prismlauncher
+    protonvpn-gui
+    onlyoffice-bin
+    vial
 
     # CLI apps
     zoxide
@@ -67,6 +69,7 @@
     k6
     gnumake
     dnsutils
+    pnpm
 
     openssl
     pkg-config
@@ -92,6 +95,7 @@
     zsh-syntax-highlighting
     bibata-cursors
     candy-icons
+    corefonts
     ## Catppuccin
     catppuccin-gtk
     catppuccin-grub
