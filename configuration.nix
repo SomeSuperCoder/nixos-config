@@ -12,6 +12,7 @@
     ./modules/nix.nix
     ./modules/fonts.nix
     ./modules/input.nix
+    ./modules/systemd.nix
   ];
 
   # Most users should NEVER change this value after the initial install, for any reason,

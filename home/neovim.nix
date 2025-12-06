@@ -6,6 +6,10 @@
     enable = true;
     colorschemes.catppuccin.enable = true;
     # colorschemes.gruvbox.enable = true;
+    # colorschemes.kanagawa.enable = true;
+    # colorschemes.tokyonight.enable = true;
+    # colorschemes.moonfly.enable = true;
+    # colorschemes.tokyonight.enable = true;
 
     globalOpts = {
       relativenumber = true;
@@ -18,7 +22,6 @@
       lualine.enable = true;
       oil.enable = true;
       web-devicons.enable = true;
-      treesitter.enable = true;
       commentary.enable = true;
       which-key.enable = true;
       trouble.enable = true;
@@ -26,7 +29,13 @@
       /*
       Dependency for otter
       */
-      treesitter.settings.highlight.enable = true;
+      treesitter = {
+        enable = true;
+        settings.highlight.enable = true;
+      };
+      luasnip.enable = true;
+      friendly-snippets.enable = true;
+      ts-autotag.enable = true;
       # ==============
       autoclose.enable = true;
       instant = {
@@ -70,6 +79,7 @@
           {name = "buffer";}
           {name = "emmet_ls";}
           {name = "tailwindcss";}
+          {name = "luasnip";}
         ];
         settings.mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
@@ -153,6 +163,10 @@
             html = ["prettierd"];
             css = ["prettierd"];
             nix = ["alejandra"];
+            c = ["clang-format"];
+            cpp = ["clang-format"];
+            json = ["prettierd"];
+            jsonc = ["prettierd"];
           };
         };
       };

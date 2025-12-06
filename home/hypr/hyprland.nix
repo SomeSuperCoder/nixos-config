@@ -130,6 +130,7 @@
         "$mainMod, I, exec, rofi -show emoji -modi emoji"
         "$mainMod, K, exec, rofi -show calc -modi calc"
         "$mainMod, G, exec, cat ~/Documents/gh.txt | wl-copy"
+        "$mainMod, J, exec, pavucontrol"
 
         # Hyprshot)))
         ", Print, exec, echo 'aHlwcnNob3QgLW0gJChwcmludGYgIm91dHB1dFxud2luZG93XG5yZWdpb24iIHwgd29maSAtLXNob3cgZG1lbnUpCg==' | base64 -d | bash"

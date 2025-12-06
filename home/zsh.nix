@@ -30,6 +30,7 @@
       cat = "bat";
       cd = "z";
       ls = "lsd";
+      wtf = "function _wtf() { echo 'Searching for: $1'; curl -s 'https://api.duckduckgo.com/?q=what+is+$1&format=json&no_html=1' | jq -r '.Abstract'; }; _wtf";
     };
   };
 

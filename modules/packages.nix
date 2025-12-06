@@ -42,6 +42,8 @@
     protonvpn-gui
     onlyoffice-bin
     vial
+    n8n
+    audacity
 
     # CLI apps
     zoxide
@@ -76,6 +78,9 @@
     glfw
     libGL
     glfw-wayland
+
+    # Run non-Nix-compatable apps
+    steam-run
 
     # Hyprland
     wofi
