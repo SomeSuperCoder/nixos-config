@@ -15,4 +15,8 @@
     enable = true;
     allowedTCPPorts = [22 80 8080 8090];
   };
+
+  programs.proxychains.enable = true;
+  programs.proxychains.proxies = {
+  };
 }
