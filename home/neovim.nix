@@ -25,7 +25,7 @@
       commentary.enable = true;
       which-key.enable = true;
       trouble.enable = true;
-      otter.enable = true;
+      # otter.enable = true;
       /*
       Dependency for otter
       */
@@ -132,6 +132,7 @@
           tailwindcss.enable = true;
           clangd.enable = true;
           arduino_language_server.enable = true;
+          svelte.enable = true;
         };
         keymaps = {
           silent = true;

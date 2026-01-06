@@ -40,7 +40,7 @@
     feh
     blender
     protonvpn-gui
-    onlyoffice-bin
+    onlyoffice-desktopeditors
     vial
     n8n
     audacity
@@ -72,12 +72,14 @@
     gnumake
     dnsutils
     pnpm
+    sqlc
+    postgresql
+    goose
 
     openssl
     pkg-config
     glfw
     libGL
-    glfw-wayland
 
     # Run non-Nix-compatable apps
     steam-run
