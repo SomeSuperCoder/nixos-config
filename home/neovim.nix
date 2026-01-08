@@ -258,5 +258,6 @@
     black
     prettierd
     alejandra
+    tree-sitter
   ];
 }
