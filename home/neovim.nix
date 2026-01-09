@@ -143,7 +143,7 @@
           gopls.enable = true;
           pyright.enable = true;
           ts_ls.enable = true;
-          eslint.enable = true;
+          # eslint.enable = true;
           html.enable = true;
           cssls.enable = true;
           bashls.enable = true;

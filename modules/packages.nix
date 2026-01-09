@@ -75,6 +75,7 @@
     sqlc
     postgresql
     goose
+    typst
 
     openssl
     pkg-config
