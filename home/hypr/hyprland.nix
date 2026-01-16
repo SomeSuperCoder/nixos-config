@@ -11,9 +11,9 @@
       monitor = ",preferred,auto,auto";
 
       general = {
-        gaps_in = 5;
-        gaps_out = 20;
-        border_size = 2;
+        gaps_in = 14;
+        gaps_out = 28;
+        border_size = 0;
 
         "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 4deg";
         "col.inactive_border" = "rgba(595959aa)";
@@ -25,23 +25,29 @@
       };
 
       decoration = {
-        rounding = 10;
-        rounding_power = 2;
+        rounding = 20;
+        rounding_power = 10;
 
         active_opacity = 1;
-        inactive_opacity = 1;
+        inactive_opacity = 0.92;
 
         shadow = {
           enabled = true;
-          range = 4;
-          render_power = 3;
-          color = "rgba(1a1a1aee)";
+          range = 25;
+          render_power = 5;
+          color = "rgba(1a1b26ff)";
         };
 
         blur = {
           enabled = true;
-          size = 6;
-          passes = 4;
+
+          size = 10;
+          passes = 3;
+
+          noise = 0.01;
+          contrast = 0.8;
+          vibrancy = 0.2;
+
           ignore_opacity = true;
           xray = false;
           new_optimizations = true;
