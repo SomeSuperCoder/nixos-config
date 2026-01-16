@@ -26,7 +26,7 @@
 
       decoration = {
         rounding = 20;
-        rounding_power = 10;
+        rounding_power = 2;
 
         active_opacity = 1;
         inactive_opacity = 0.92;
@@ -34,8 +34,8 @@
         shadow = {
           enabled = true;
           range = 25;
-          render_power = 5;
-          color = "rgba(1a1b26ff)";
+          render_power = 3;
+          color = "rgba(1a1b2699)";
         };
 
         blur = {
