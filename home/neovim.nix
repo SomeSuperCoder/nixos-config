@@ -63,6 +63,7 @@
       luasnip.enable = true;
       friendly-snippets.enable = true;
       ts-autotag.enable = true;
+      transparent.enable = true;
       # ==============
       autoclose.enable = true;
       instant = {
