@@ -13,6 +13,7 @@
     ./modules/fonts.nix
     ./modules/input.nix
     ./modules/systemd.nix
+    ./modules/antiissues.nix
   ];
 
   # Most users should NEVER change this value after the initial install, for any reason,
