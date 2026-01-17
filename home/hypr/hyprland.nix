@@ -33,8 +33,8 @@
 
         shadow = {
           enabled = true;
-          range = 25;
-          render_power = 3;
+          range = 35;
+          render_power = 2;
           color = "rgba(1a1b2699)";
         };
 
