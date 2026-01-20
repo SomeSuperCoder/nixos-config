@@ -127,6 +127,7 @@
     avrdude
     openjdk
     arduino-cli
+    elixir
 
     # DevOps
     minikube

@@ -141,6 +141,7 @@
         enable = true;
         servers = {
           nixd.enable = true;
+          elixirls.enable = true;
           gopls.enable = true;
           pyright.enable = true;
           ts_ls.enable = true;
