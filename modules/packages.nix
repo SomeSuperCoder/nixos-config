@@ -128,6 +128,7 @@
     openjdk
     arduino-cli
     elixir
+    tailwindcss
 
     # DevOps
     minikube
