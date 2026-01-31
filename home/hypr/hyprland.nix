@@ -13,7 +13,7 @@
       general = {
         gaps_in = 14;
         gaps_out = 28;
-        border_size = 0;
+        border_size = 2;
 
         "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 4deg";
         "col.inactive_border" = "rgba(595959aa)";

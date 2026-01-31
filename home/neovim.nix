@@ -32,29 +32,6 @@
       treesitter = {
         enable = true;
         # Install all supported parsers
-        ensure_installed = [
-          "c"
-          "cpp"
-          "go"
-          "python"
-          "rust"
-          "java"
-          "javascript"
-          "typescript"
-          "tsx" # For React TypeScript
-          "svelte"
-          "html"
-          "css"
-          "json"
-          "lua"
-          "nix"
-          "bash"
-          "markdown"
-          "yaml"
-          "toml"
-          "comment"
-          "regex"
-        ];
         settings = {
           highlight.enable = true;
           indent.enable = true;
@@ -82,11 +59,11 @@
 
       neo-tree = {
         enable = true;
-        enable_diagnostics = true;
-        enable_git_status = true;
-        enable_modified_markers = true;
-        enable_refresh_on_write = true;
-        close_if_last_window = true;
+        enableDiagnostics = true;
+        enableGitStatus = true;
+        enableModifiedMarkers = true;
+        enableRefreshOnWrite = true;
+        closeIfLastWindow = true;
       };
       notify = {
         enable = true;
@@ -197,6 +174,8 @@
             cpp = ["clang-format"];
             json = ["prettierd"];
             jsonc = ["prettierd"];
+            # elixir = ["mix"];
+            # eelixir = ["mix"];
           };
         };
       };

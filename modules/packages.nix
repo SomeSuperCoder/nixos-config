@@ -1,4 +1,6 @@
 {pkgs, ...}: {
+  programs.nix-ld.enable = true;
+
   # QMK
   services.udev.packages = with pkgs; [qmk vial];
   # Install docker
@@ -42,7 +44,7 @@
     protonvpn-gui
     onlyoffice-desktopeditors
     vial
-    n8n
+    # n8n
     audacity
 
     # CLI apps
@@ -129,6 +131,7 @@
     arduino-cli
     elixir
     tailwindcss
+    inotify-tools
 
     # DevOps
     minikube
