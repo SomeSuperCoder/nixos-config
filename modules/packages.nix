@@ -132,6 +132,7 @@
     elixir
     tailwindcss
     inotify-tools
+    redis
 
     # DevOps
     minikube

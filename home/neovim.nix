@@ -41,6 +41,7 @@
       friendly-snippets.enable = true;
       ts-autotag.enable = true;
       transparent.enable = true;
+      windsurf-nvim.enable = true;
       # ==============
       autoclose.enable = true;
       instant = {
