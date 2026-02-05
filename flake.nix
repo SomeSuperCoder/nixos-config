@@ -18,7 +18,11 @@
       url = "github:catppuccin/nix/release-25.11";
     };
 
-    # zen-browser.url = "github:MarceColl/zen-browser-flake";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
 
   outputs = {
@@ -26,12 +30,14 @@
     home-manager,
     nixvim,
     catppuccin,
+    zen-browser,
     ...
-  }: let
+  } @ inputs: let
     system = "x86_64-linux";
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      inherit system;
+      # inherit system;
+      specialArgs = {inherit inputs system;}; # Pass all inputs
       modules = [./configuration.nix catppuccin.nixosModules.catppuccin];
     };
 

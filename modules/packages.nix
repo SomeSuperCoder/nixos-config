@@ -1,4 +1,9 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  system,
+  inputs,
+  ...
+}: {
   programs.nix-ld.enable = true;
 
   # QMK
@@ -15,6 +20,8 @@
   # services.flatpak.enable = true;
   # Actually install things
   environment.systemPackages = with pkgs; [
+    inputs.zen-browser.packages.${system}.default
+
     # Super important
     home-manager
 
