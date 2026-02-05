@@ -133,6 +133,7 @@
     tailwindcss
     inotify-tools
     redis
+    bfg-repo-cleaner
 
     # DevOps
     minikube
