@@ -6,7 +6,7 @@
       "$terminal" = "kitty";
       "$fileManager" = "$terminal yazi";
       "$menu" = "rofi -show drun -show-icons -icon-theme Papirus";
-      "$browser" = "firefox";
+      "$browser" = "zen";
 
       monitor = ",preferred,auto,auto";
 
