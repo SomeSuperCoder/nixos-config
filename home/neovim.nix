@@ -65,6 +65,15 @@
         enableModifiedMarkers = true;
         enableRefreshOnWrite = true;
         closeIfLastWindow = true;
+        # Configure it to appear on the right
+        window.position = "right";
+
+        # Optional: Other useful settings
+        filesystem.filteredItems = {
+          visible = true;
+          hideDotfiles = false;
+          hideByName = [".git" "node_modules" ".cache"];
+        };
       };
       notify = {
         enable = true;
@@ -76,10 +85,19 @@
           topDown = true;
         };
       };
+
       cmp = {
         enable = true;
         autoEnableSources = true;
+        settings = {
+          completion = {
+            completeopt = "menu,menuone,noselect,preview";
+          };
+          # Add this line to start with the first item selected
+          preselect = "item";
+        };
         settings.sources = [
+          {name = "codeium";}
           {name = "nvim_lsp";}
           {name = "path";}
           {name = "buffer";}
