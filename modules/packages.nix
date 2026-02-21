@@ -147,6 +147,7 @@
     kubectl
     docker
     docker-compose
+    parallel
 
     # DPI bypass software
     zapret
