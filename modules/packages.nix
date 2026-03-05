@@ -6,6 +6,8 @@
 }: {
   programs.nix-ld.enable = true;
 
+  # Ollama
+  services.ollama.enable = true;
   # QMK
   services.udev.packages = with pkgs; [qmk vial];
   # Install docker
@@ -51,6 +53,9 @@
     protonvpn-gui
     onlyoffice-desktopeditors
     vial
+    warp
+    kiro
+
     # n8n
     audacity
 

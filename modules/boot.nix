@@ -14,4 +14,11 @@
   boot.initrd.systemd.enable = true;
   catppuccin.plymouth.enable = true;
   catppuccin.plymouth.flavor = "macchiato";
+
+  boot.kernelParams = [
+    # "psmouse.synaptics_intertouch=0"
+    # "i8042.reset"
+    # "i8042.nomux"
+    # "i8042.nopnp"
+  ];
 }
