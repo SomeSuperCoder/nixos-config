@@ -25,6 +25,7 @@
       commentary.enable = true;
       which-key.enable = true;
       trouble.enable = true;
+      vim-dadbod-ui.enable = true;
       # otter.enable = true;
       /*
       Dependency for otter
@@ -158,6 +159,7 @@
           clangd.enable = true;
           arduino_language_server.enable = true;
           svelte.enable = true;
+          sqls.enable = true;
         };
         keymaps = {
           silent = true;

@@ -3,9 +3,9 @@
     enable = true;
 
     initContent = ''
-      if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-          exec tmux a
-      fi
+      # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; thenz
+      # exec tmux a
+      # fi
 
       eval "$(zoxide init zsh)"
     '';

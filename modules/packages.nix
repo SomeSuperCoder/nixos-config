@@ -55,6 +55,7 @@
     vial
     warp
     kiro
+    warp-terminal
 
     # n8n
     audacity
