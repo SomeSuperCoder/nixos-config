@@ -31,6 +31,7 @@
     firefox
     chromium
     telegram-desktop
+    signal-desktop-bin
     alacritty
     gnome-tweaks
     nwg-look
