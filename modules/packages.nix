@@ -148,6 +148,8 @@
     inotify-tools
     redis
     bfg-repo-cleaner
+    protoc-gen-go
+    grpc-tools
 
     # DevOps
     minikube
