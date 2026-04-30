@@ -3,7 +3,12 @@
   system,
   inputs,
   ...
-}: {
+}: let
+  pkgs-unstable = import inputs.nixpkgs-unstable {
+    inherit system;
+    config.allowUnfree = true;
+  };
+in {
   programs.nix-ld.enable = true;
 
   # Ollama
@@ -23,6 +28,7 @@
   # Actually install things
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages.${system}.default
+    pkgs-unstable.kiro-cli
 
     # Super important
     home-manager
